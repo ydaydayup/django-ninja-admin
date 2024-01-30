@@ -8,5 +8,5 @@ RUN python3 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ -r requi
 
 COPY ./backend .
 COPY ./backend/conf/docker.py conf/env.py
-
+# pdm run celery -A fuadmin worker -B --loglevel=info
 CMD ["celery", "-A", "fuadmin", "worker", "-B", "--loglevel=info"]
