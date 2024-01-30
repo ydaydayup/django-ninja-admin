@@ -5,6 +5,8 @@
 # @Software: PyCharm
 import json
 from datetime import datetime
+from typing import Optional
+
 # from django.core.cache import cache
 
 from django.contrib import auth
@@ -23,7 +25,7 @@ router = Router()
 
 
 class SchemaOut(ModelSchema):
-    homePath: str = Field(None, alias="home_path")
+    homePath: Optional[str] = Field(None, alias="home_path")
 
     class Config:
         model = Users
@@ -36,7 +38,7 @@ class LoginSchema(Schema):
 
 
 class Out(Schema):
-    multi_depart: str
+    multi_depart: int
     sysAllDictItems: str
     departs: str
     userInfo: SchemaOut

@@ -1,0 +1,33 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "yunhongze", email = "yunhongze@qq.com"},
+]
+dependencies = [
+    "django-ninja>=1.1.0",
+    "Django==4.0.8",
+    "typing==3.7.4.3",
+    "simplejwt==2.0.1",
+    "pydantic>=1.10.14",
+    "requests==2.28.1",
+    "mysqlclient>=2.2.1",
+    "django-celery-beat==2.5.0",
+    "django-celery-results==2.3.1",
+    "celery==5.2.7",
+    "pypinyin==0.46.0",
+    "user-agents==2.2.0",
+    "django-redis==5.2.0",
+    "openpyxl==3.0.10",
+    "psutil==5.9.1",
+    "daphne==4.0.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
